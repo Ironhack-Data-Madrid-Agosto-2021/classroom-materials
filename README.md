@@ -9,4 +9,7 @@ Amanda Galvez [@agalvezcorell](https://github.com/agalvezcorell)
 Manuel López Sheriff [@sheriffff](https://github.com/sheriffff)      
 Ana García [@anaAGG](https://github.com/anaAGG)         
 
-![rocket](https://media.giphy.com/media/HtaGVNHVnTNuw/giphy.gif)
+
+<p align="center">
+  <img src="https://media.giphy.com/media/HtaGVNHVnTNuw/giphy.gif" alt="animated" />
+</p>
