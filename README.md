@@ -9,14 +9,4 @@ Amanda Galvez [@agalvezcorell](https://github.com/agalvezcorell)
 Manuel López Sheriff [@sheriffff](https://github.com/sheriffff)      
 Ana García [@anaAGG](https://github.com/anaAGG)         
 
-
-<p align="center">
-  <img src="https://media.giphy.com/media/mi6DsSSNKDbUY/giphy.gif" alt="animated" />
-</p>
-
-
-<p align="center">
-  <img width="460" height="300" src="https://media.giphy.com/media/mi6DsSSNKDbUY/giphy.gif">
-</p>
-
-<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/mi6DsSSNKDbUY" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/space-rocket-mi6DsSSNKDbUY">via GIPHY</a></p>
+![rocket](https://media.giphy.com/media/mi6DsSSNKDbUY/giphy.gif)
