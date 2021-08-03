@@ -11,5 +11,10 @@ Ana García [@anaAGG](https://github.com/anaAGG)
 
 
 <p align="center">
-  <img src="https://giphy.com/gifs/space-rocket-mi6DsSSNKDbUY" alt="animated" />
+  <img src="https://media.giphy.com/media/mi6DsSSNKDbUY/giphy.gif" alt="animated" />
+</p>
+
+
+<p align="center">
+  <img width="460" height="300" src="https://media.giphy.com/media/mi6DsSSNKDbUY/giphy.gif">
 </p>
