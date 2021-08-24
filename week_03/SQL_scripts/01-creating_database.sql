@@ -91,7 +91,13 @@ ADD FOREIGN KEY(client)
 REFERENCES client(client_id)
 ON DELETE SET NULL;
 
-
+CREATE TABLE takes_course(
+participant_id INT,
+course_id INT,
+PRIMARY KEY(participant_id, course_id),
+FOREIGN KEY(participant_id)REFERENCES participant(participant_id) ON DELETE CASCADE,
+FOREIGN KEY(course_id) REFERENCES course(course_id) ON DELETE CASCADE
+);
 
 
 ###################################
@@ -100,7 +106,8 @@ ON DELETE SET NULL;
 
 
 -- Partial inserts
-
+INSERT INTO teacher VALUES
+(1, 'James', 'Smith', 'ENG', NULL, '1985-04-20', 12345, '+491774553676');
 
 -- Delete records
 
