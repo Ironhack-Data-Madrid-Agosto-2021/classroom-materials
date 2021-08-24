@@ -186,3 +186,4 @@ INSERT INTO takes_course VALUES
 #           PLAY AROUND           #
 ###################################
 
+SELECT * FROM participant
