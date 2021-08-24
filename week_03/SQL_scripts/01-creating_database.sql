@@ -13,16 +13,33 @@ Participants may be enrolled in more than one course.
 see: https://towardsdatascience.com/designing-a-relational-database-and-creating-an-entity-relationship-diagram-89c1c19320b2
 */ 
 
+
+
+
 #############################
 #      CREATE THE DB        #
 #############################
 # doomsday!
 
+DROP DATABASE IF EXISTS school;
+CREATE DATABASE school;
+USE school;
 
 #############################
 #      CREATE THE TABLES    #
 #############################
 -- STEP 1 teacher
+
+CREATE TABLE teacher (
+teacher_id INT PRIMARY KEY,
+first_name VARCHAR(40) NOT NULL,
+last_name VARCHAR(40) NOT NULL,
+language_1 VARCHAR(3) NOT NULL,
+language_2 VARCHAR(3), 
+dob DATE,
+tax_id INT UNIQUE,
+phone_no VARCHAR(20)
+);
 
 
 -- STEP 2: create the tables client, participants, course
