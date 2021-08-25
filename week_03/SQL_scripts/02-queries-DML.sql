@@ -9,7 +9,6 @@
 ##########################################################
 ##########################################################
 
-
 ###########
 -- SELECT - FROM: https://www.mysqltutorial.org/mysql-select-statement-query-data.aspx
 
@@ -20,12 +19,22 @@ USE employees;
 ###########
 -- SELECT - FROM: https://www.mysqltutorial.org/mysql-select-statement-query-data.aspx
 
-
 # seleccionar columnas específicas de la tabla
+SELECT birth_date, first_name, last_name
+FROM employees;
 
+SELECT
+	birth_date, first_name, last_name
+FROM
+	employees;
+	
 
 # seleccionar todas las columnas de la tabla   
+SELECT * FROM employees;
 
+
+SELECT *
+FROM employees;
 
 ###########
 -- WHERE: https://www.mysqltutorial.org/mysql-where/
@@ -37,9 +46,15 @@ deben satisfacer
 
 -- Todos los empleados nombrados Hugo
 
+SELECT * 
+FROM employees
+WHERE first_name = "Hugo";
 
-    
 -- Todas las empleadas
+
+SELECT *
+FROM employees
+WHERE gender = "F";
 
 
 ###########    
@@ -53,23 +68,30 @@ las palabras clave y los simbolos. Echemos un vistazo a los más
 
 -- Todas las empleadas llamadas Hugo
 
+SELECT *
+FROM employees
+WHERE first_name = "Hugo" AND gender = "F";
+
 
 ###########
 -- OR: https://www.mysqltutorial.org/mysql-or/
 
 -- Todas las empleadas que son mujeres o se llaman Hugo
 
-
+SELECT *
+FROM employees
+WHERE first_name = "Hugo" OR gender = "F";
     
 ###########
 -- Precedencia del operador
 
-
 # ¿Qué va a devolver esta query?
 
+SELECT *
+FROM employees
+WHERE (first_name = "Hugo" AND gender = "F") OR gender = "M";
 
 # ¿Y esta?
-
 
 /*
 Regla SQL: El operador AND tiene prioridad sobre el operador OR
@@ -78,13 +100,15 @@ Regla SQL: El operador AND tiene prioridad sobre el operador OR
 
 -- La siguiente query devuelve todos los Hugo que sean F o M
 
-
-
+SELECT *
+FROM employees
+WHERE first_name = "Hugo" AND (gender = "F" OR gender ="M");
 
 ###########
 -- IN / NOT IN: https://www.mysqltutorial.org/sql-in.aspx
 
 # Recuperar todos los datos de las personas llamadas Hugo, Mark, Bojan o Anneke
+
 
 
 
