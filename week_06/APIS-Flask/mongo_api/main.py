@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import markdown.extensions.fenced_code
-import tools.getdata as get
+import tools.mongo_tools as mongo
 
 app = Flask(__name__)
 
@@ -16,8 +16,29 @@ def index():
 
 @app.route("/frases")
 def frases():
-    frase = get.primera_frase()
+    frase = mongo.todas_frases()
     return jsonify(frase)
+
+
+@app.route("/prueba")
+def probando():
+    frase = mongo.una_frase()
+    print(frase)
+    return frase
+
+
+@app.route("/nuevafrase", methods=["POST"])
+def insertamensaje():
+    diccionario = { "scene": request.form.get("escena"), 
+    "character_name": request.form.get("personaje"),
+    "dialogue": request.form.get("frase")
+    }
+    # Podríamos llamar a las funciones check
+    
+    return mongo.insertamensaje(diccionario)
+
+
+
 
 
 
